@@ -1,0 +1,95 @@
+/******************************************
+*******************************************
+******* DESENVOLVIDO POR LEO KOVASKI ******
+******* email: leokovaski@gmail.com  ******
+*******************************************
+******************************************/
+
+
+.chatbox {
+	display: block;
+	position: fixed;
+	z-index: 100;
+	bottom: -50%;
+	right: 0;
+	width: 100%;
+	max-width: 400px;
+	height: 50%;
+	border: 1px solid #CCC;
+
+	-webkit-transition: all .5s; /* Safari */
+	transition: all .5s;
+	
+}
+
+.chatbot-icon{
+    position:fixed;
+    bottom:0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    float: right !important;
+}
+
+.chatbot-icon img{
+	float: right !important;
+}
+
+.chatbox.middle {
+	bottom: 0;
+}
+.chatbox.full {
+	height: 100%;
+	bottom: 0;
+}
+.chatbox.close {
+	height: 45px;
+	bottom: 0;
+}
+
+.chatbox .chatbox-header {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: #be222c;
+	top: 0;
+	left: 0;
+}
+
+.chatbox .chatbox-header .btn-logo img {
+	height: 35px;
+	width: auto;
+	padding: 7px;
+}
+.chatbox .chatbox-header path {
+	stroke: white !important;
+}
+.chatbox .chatbox-header-text {
+	position: absolute;
+	color: #FFF;
+	top: 0px;
+	left: 80px;
+	line-height: 1em;
+	font-size: Helvetica, arial, sans-serif;
+}
+
+
+.chatbox button.close {
+	position: absolute;
+	z-index: 101;
+	top: 10px;
+	right: 10px;
+	background: none;
+	border: 0;
+	color: #000;
+	font: inherit;
+	font-family: inherit;
+	outline: 0;
+}
+#iframe-site {
+	position: fixed;
+	top: 0;
+	left: 0;
+	border: 3px solid #f9f9fb; width: 100%; height: 100%;
+}
